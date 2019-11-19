@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- FontAwesome 4.7 CSS -->
+    <script src="https://use.fontawesome.com/da7f8f8eee.js"></script>
+
+    <title>Image reloader</title>
+  </head>
+  <body>
+    
+    <div class="container">
+
+        <div id="normal-image" class="card mt-3 mb-3">
+            <div class="card-body">
+                <a href="#normal-image">
+                    <h3>Imagen normal</h3>
+                </a>
+                <img class="mx-auto d-block" src="/img/gato-piano.jpg" alt="Gato tocando el piano">
+            </div>
+        </div>
+
+        <div id="image-without-border" class="card mt-3 mb-3">
+            <div class="card-body">
+                <a href="#image-without-border">
+                    <h3>Imagen sin bordes</h3>
+                </a>
+                <img class="mx-auto d-block" src="/img/5-Pesos.jpg" alt="Moneda de 5 pesos">
+            </div>
+        </div>
+
+        <div id="image-invalid" class="card mt-3 mb-3">
+            <div class="card-body">
+                <a href="#image-invalid">
+                    <h3>Imagen imagen inválida</h3>
+                </a>
+                <img class="mx-auto d-block" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/4gv" alt="Imagen inválida">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/image.reloader.js"></script>
+    <script>
+        $(document).ready(function(){
+            ImageReloader.init({
+                container: '.container'
+            });
+        });
+    </script>
+  </body>
+</html>
